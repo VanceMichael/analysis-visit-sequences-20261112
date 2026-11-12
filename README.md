@@ -13,7 +13,7 @@ tick 是访问内分钟，同一 tick 不规定动作顺序；phase 只标识场
 npm ci --ignore-scripts --no-audit --no-fund --offline
 npm run build
 npm test
-npm start
+npm run summary
 node src/cli.js inspect --input data/records.json
 node src/cli.js summary --input data/records.json --out var/summary.json
 npm run demo
