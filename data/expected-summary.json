@@ -1,0 +1,22 @@
+[
+  {
+    "key": "demo",
+    "count": 24,
+    "sum": 240
+  },
+  {
+    "key": "entrance",
+    "count": 24,
+    "sum": 0
+  },
+  {
+    "key": "meeting",
+    "count": 24,
+    "sum": 240
+  },
+  {
+    "key": "sample",
+    "count": 24,
+    "sum": 600
+  }
+]

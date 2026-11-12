@@ -1,0 +1,869 @@
+{
+  "version": 1,
+  "records": [
+    {
+      "buyer": "b0",
+      "visit": "v0",
+      "tick": 0,
+      "zone": "entrance",
+      "phase": "early",
+      "signed": true,
+      "id": "r0000"
+    },
+    {
+      "buyer": "b0",
+      "visit": "v0",
+      "tick": 10,
+      "zone": "demo",
+      "phase": "early",
+      "signed": true,
+      "id": "r0001"
+    },
+    {
+      "buyer": "b0",
+      "visit": "v0",
+      "tick": 10,
+      "zone": "meeting",
+      "phase": "early",
+      "signed": true,
+      "id": "r0002"
+    },
+    {
+      "buyer": "b0",
+      "visit": "v0",
+      "tick": 25,
+      "zone": "sample",
+      "phase": "early",
+      "signed": true,
+      "id": "r0003"
+    },
+    {
+      "buyer": "b1",
+      "visit": "v1",
+      "tick": 0,
+      "zone": "entrance",
+      "phase": "early",
+      "signed": false,
+      "id": "r0004"
+    },
+    {
+      "buyer": "b1",
+      "visit": "v1",
+      "tick": 10,
+      "zone": "demo",
+      "phase": "early",
+      "signed": false,
+      "id": "r0005"
+    },
+    {
+      "buyer": "b1",
+      "visit": "v1",
+      "tick": 10,
+      "zone": "meeting",
+      "phase": "early",
+      "signed": false,
+      "id": "r0006"
+    },
+    {
+      "buyer": "b1",
+      "visit": "v1",
+      "tick": 25,
+      "zone": "sample",
+      "phase": "early",
+      "signed": false,
+      "id": "r0007"
+    },
+    {
+      "buyer": "b2",
+      "visit": "v2",
+      "tick": 0,
+      "zone": "entrance",
+      "phase": "early",
+      "signed": false,
+      "id": "r0008"
+    },
+    {
+      "buyer": "b2",
+      "visit": "v2",
+      "tick": 10,
+      "zone": "demo",
+      "phase": "early",
+      "signed": false,
+      "id": "r0009"
+    },
+    {
+      "buyer": "b2",
+      "visit": "v2",
+      "tick": 10,
+      "zone": "meeting",
+      "phase": "early",
+      "signed": false,
+      "id": "r0010"
+    },
+    {
+      "buyer": "b2",
+      "visit": "v2",
+      "tick": 25,
+      "zone": "sample",
+      "phase": "early",
+      "signed": false,
+      "id": "r0011"
+    },
+    {
+      "buyer": "b3",
+      "visit": "v3",
+      "tick": 0,
+      "zone": "entrance",
+      "phase": "early",
+      "signed": true,
+      "id": "r0012"
+    },
+    {
+      "buyer": "b3",
+      "visit": "v3",
+      "tick": 10,
+      "zone": "demo",
+      "phase": "early",
+      "signed": true,
+      "id": "r0013"
+    },
+    {
+      "buyer": "b3",
+      "visit": "v3",
+      "tick": 10,
+      "zone": "meeting",
+      "phase": "early",
+      "signed": true,
+      "id": "r0014"
+    },
+    {
+      "buyer": "b3",
+      "visit": "v3",
+      "tick": 25,
+      "zone": "sample",
+      "phase": "early",
+      "signed": true,
+      "id": "r0015"
+    },
+    {
+      "buyer": "b4",
+      "visit": "v4",
+      "tick": 0,
+      "zone": "entrance",
+      "phase": "early",
+      "signed": false,
+      "id": "r0016"
+    },
+    {
+      "buyer": "b4",
+      "visit": "v4",
+      "tick": 10,
+      "zone": "demo",
+      "phase": "early",
+      "signed": false,
+      "id": "r0017"
+    },
+    {
+      "buyer": "b4",
+      "visit": "v4",
+      "tick": 10,
+      "zone": "meeting",
+      "phase": "early",
+      "signed": false,
+      "id": "r0018"
+    },
+    {
+      "buyer": "b4",
+      "visit": "v4",
+      "tick": 25,
+      "zone": "sample",
+      "phase": "early",
+      "signed": false,
+      "id": "r0019"
+    },
+    {
+      "buyer": "b5",
+      "visit": "v5",
+      "tick": 0,
+      "zone": "entrance",
+      "phase": "early",
+      "signed": false,
+      "id": "r0020"
+    },
+    {
+      "buyer": "b5",
+      "visit": "v5",
+      "tick": 10,
+      "zone": "demo",
+      "phase": "early",
+      "signed": false,
+      "id": "r0021"
+    },
+    {
+      "buyer": "b5",
+      "visit": "v5",
+      "tick": 10,
+      "zone": "meeting",
+      "phase": "early",
+      "signed": false,
+      "id": "r0022"
+    },
+    {
+      "buyer": "b5",
+      "visit": "v5",
+      "tick": 25,
+      "zone": "sample",
+      "phase": "early",
+      "signed": false,
+      "id": "r0023"
+    },
+    {
+      "buyer": "b6",
+      "visit": "v6",
+      "tick": 0,
+      "zone": "entrance",
+      "phase": "early",
+      "signed": true,
+      "id": "r0024"
+    },
+    {
+      "buyer": "b6",
+      "visit": "v6",
+      "tick": 10,
+      "zone": "demo",
+      "phase": "early",
+      "signed": true,
+      "id": "r0025"
+    },
+    {
+      "buyer": "b6",
+      "visit": "v6",
+      "tick": 10,
+      "zone": "meeting",
+      "phase": "early",
+      "signed": true,
+      "id": "r0026"
+    },
+    {
+      "buyer": "b6",
+      "visit": "v6",
+      "tick": 25,
+      "zone": "sample",
+      "phase": "early",
+      "signed": true,
+      "id": "r0027"
+    },
+    {
+      "buyer": "b7",
+      "visit": "v7",
+      "tick": 0,
+      "zone": "entrance",
+      "phase": "early",
+      "signed": false,
+      "id": "r0028"
+    },
+    {
+      "buyer": "b7",
+      "visit": "v7",
+      "tick": 10,
+      "zone": "demo",
+      "phase": "early",
+      "signed": false,
+      "id": "r0029"
+    },
+    {
+      "buyer": "b7",
+      "visit": "v7",
+      "tick": 10,
+      "zone": "meeting",
+      "phase": "early",
+      "signed": false,
+      "id": "r0030"
+    },
+    {
+      "buyer": "b7",
+      "visit": "v7",
+      "tick": 25,
+      "zone": "sample",
+      "phase": "early",
+      "signed": false,
+      "id": "r0031"
+    },
+    {
+      "buyer": "b8",
+      "visit": "v8",
+      "tick": 0,
+      "zone": "entrance",
+      "phase": "early",
+      "signed": false,
+      "id": "r0032"
+    },
+    {
+      "buyer": "b8",
+      "visit": "v8",
+      "tick": 10,
+      "zone": "demo",
+      "phase": "early",
+      "signed": false,
+      "id": "r0033"
+    },
+    {
+      "buyer": "b8",
+      "visit": "v8",
+      "tick": 10,
+      "zone": "meeting",
+      "phase": "early",
+      "signed": false,
+      "id": "r0034"
+    },
+    {
+      "buyer": "b8",
+      "visit": "v8",
+      "tick": 25,
+      "zone": "sample",
+      "phase": "early",
+      "signed": false,
+      "id": "r0035"
+    },
+    {
+      "buyer": "b9",
+      "visit": "v9",
+      "tick": 0,
+      "zone": "entrance",
+      "phase": "early",
+      "signed": true,
+      "id": "r0036"
+    },
+    {
+      "buyer": "b9",
+      "visit": "v9",
+      "tick": 10,
+      "zone": "demo",
+      "phase": "early",
+      "signed": true,
+      "id": "r0037"
+    },
+    {
+      "buyer": "b9",
+      "visit": "v9",
+      "tick": 10,
+      "zone": "meeting",
+      "phase": "early",
+      "signed": true,
+      "id": "r0038"
+    },
+    {
+      "buyer": "b9",
+      "visit": "v9",
+      "tick": 25,
+      "zone": "sample",
+      "phase": "early",
+      "signed": true,
+      "id": "r0039"
+    },
+    {
+      "buyer": "b10",
+      "visit": "v10",
+      "tick": 0,
+      "zone": "entrance",
+      "phase": "early",
+      "signed": false,
+      "id": "r0040"
+    },
+    {
+      "buyer": "b10",
+      "visit": "v10",
+      "tick": 10,
+      "zone": "demo",
+      "phase": "early",
+      "signed": false,
+      "id": "r0041"
+    },
+    {
+      "buyer": "b10",
+      "visit": "v10",
+      "tick": 10,
+      "zone": "meeting",
+      "phase": "early",
+      "signed": false,
+      "id": "r0042"
+    },
+    {
+      "buyer": "b10",
+      "visit": "v10",
+      "tick": 25,
+      "zone": "sample",
+      "phase": "early",
+      "signed": false,
+      "id": "r0043"
+    },
+    {
+      "buyer": "b11",
+      "visit": "v11",
+      "tick": 0,
+      "zone": "entrance",
+      "phase": "early",
+      "signed": false,
+      "id": "r0044"
+    },
+    {
+      "buyer": "b11",
+      "visit": "v11",
+      "tick": 10,
+      "zone": "demo",
+      "phase": "early",
+      "signed": false,
+      "id": "r0045"
+    },
+    {
+      "buyer": "b11",
+      "visit": "v11",
+      "tick": 10,
+      "zone": "meeting",
+      "phase": "early",
+      "signed": false,
+      "id": "r0046"
+    },
+    {
+      "buyer": "b11",
+      "visit": "v11",
+      "tick": 25,
+      "zone": "sample",
+      "phase": "early",
+      "signed": false,
+      "id": "r0047"
+    },
+    {
+      "buyer": "b12",
+      "visit": "v12",
+      "tick": 0,
+      "zone": "entrance",
+      "phase": "late",
+      "signed": true,
+      "id": "r0048"
+    },
+    {
+      "buyer": "b12",
+      "visit": "v12",
+      "tick": 10,
+      "zone": "demo",
+      "phase": "late",
+      "signed": true,
+      "id": "r0049"
+    },
+    {
+      "buyer": "b12",
+      "visit": "v12",
+      "tick": 10,
+      "zone": "meeting",
+      "phase": "late",
+      "signed": true,
+      "id": "r0050"
+    },
+    {
+      "buyer": "b12",
+      "visit": "v12",
+      "tick": 25,
+      "zone": "sample",
+      "phase": "late",
+      "signed": true,
+      "id": "r0051"
+    },
+    {
+      "buyer": "b13",
+      "visit": "v13",
+      "tick": 0,
+      "zone": "entrance",
+      "phase": "late",
+      "signed": false,
+      "id": "r0052"
+    },
+    {
+      "buyer": "b13",
+      "visit": "v13",
+      "tick": 10,
+      "zone": "demo",
+      "phase": "late",
+      "signed": false,
+      "id": "r0053"
+    },
+    {
+      "buyer": "b13",
+      "visit": "v13",
+      "tick": 10,
+      "zone": "meeting",
+      "phase": "late",
+      "signed": false,
+      "id": "r0054"
+    },
+    {
+      "buyer": "b13",
+      "visit": "v13",
+      "tick": 25,
+      "zone": "sample",
+      "phase": "late",
+      "signed": false,
+      "id": "r0055"
+    },
+    {
+      "buyer": "b14",
+      "visit": "v14",
+      "tick": 0,
+      "zone": "entrance",
+      "phase": "late",
+      "signed": false,
+      "id": "r0056"
+    },
+    {
+      "buyer": "b14",
+      "visit": "v14",
+      "tick": 10,
+      "zone": "demo",
+      "phase": "late",
+      "signed": false,
+      "id": "r0057"
+    },
+    {
+      "buyer": "b14",
+      "visit": "v14",
+      "tick": 10,
+      "zone": "meeting",
+      "phase": "late",
+      "signed": false,
+      "id": "r0058"
+    },
+    {
+      "buyer": "b14",
+      "visit": "v14",
+      "tick": 25,
+      "zone": "sample",
+      "phase": "late",
+      "signed": false,
+      "id": "r0059"
+    },
+    {
+      "buyer": "b15",
+      "visit": "v15",
+      "tick": 0,
+      "zone": "entrance",
+      "phase": "late",
+      "signed": true,
+      "id": "r0060"
+    },
+    {
+      "buyer": "b15",
+      "visit": "v15",
+      "tick": 10,
+      "zone": "demo",
+      "phase": "late",
+      "signed": true,
+      "id": "r0061"
+    },
+    {
+      "buyer": "b15",
+      "visit": "v15",
+      "tick": 10,
+      "zone": "meeting",
+      "phase": "late",
+      "signed": true,
+      "id": "r0062"
+    },
+    {
+      "buyer": "b15",
+      "visit": "v15",
+      "tick": 25,
+      "zone": "sample",
+      "phase": "late",
+      "signed": true,
+      "id": "r0063"
+    },
+    {
+      "buyer": "b16",
+      "visit": "v16",
+      "tick": 0,
+      "zone": "entrance",
+      "phase": "late",
+      "signed": false,
+      "id": "r0064"
+    },
+    {
+      "buyer": "b16",
+      "visit": "v16",
+      "tick": 10,
+      "zone": "demo",
+      "phase": "late",
+      "signed": false,
+      "id": "r0065"
+    },
+    {
+      "buyer": "b16",
+      "visit": "v16",
+      "tick": 10,
+      "zone": "meeting",
+      "phase": "late",
+      "signed": false,
+      "id": "r0066"
+    },
+    {
+      "buyer": "b16",
+      "visit": "v16",
+      "tick": 25,
+      "zone": "sample",
+      "phase": "late",
+      "signed": false,
+      "id": "r0067"
+    },
+    {
+      "buyer": "b17",
+      "visit": "v17",
+      "tick": 0,
+      "zone": "entrance",
+      "phase": "late",
+      "signed": false,
+      "id": "r0068"
+    },
+    {
+      "buyer": "b17",
+      "visit": "v17",
+      "tick": 10,
+      "zone": "demo",
+      "phase": "late",
+      "signed": false,
+      "id": "r0069"
+    },
+    {
+      "buyer": "b17",
+      "visit": "v17",
+      "tick": 10,
+      "zone": "meeting",
+      "phase": "late",
+      "signed": false,
+      "id": "r0070"
+    },
+    {
+      "buyer": "b17",
+      "visit": "v17",
+      "tick": 25,
+      "zone": "sample",
+      "phase": "late",
+      "signed": false,
+      "id": "r0071"
+    },
+    {
+      "buyer": "b18",
+      "visit": "v18",
+      "tick": 0,
+      "zone": "entrance",
+      "phase": "late",
+      "signed": true,
+      "id": "r0072"
+    },
+    {
+      "buyer": "b18",
+      "visit": "v18",
+      "tick": 10,
+      "zone": "demo",
+      "phase": "late",
+      "signed": true,
+      "id": "r0073"
+    },
+    {
+      "buyer": "b18",
+      "visit": "v18",
+      "tick": 10,
+      "zone": "meeting",
+      "phase": "late",
+      "signed": true,
+      "id": "r0074"
+    },
+    {
+      "buyer": "b18",
+      "visit": "v18",
+      "tick": 25,
+      "zone": "sample",
+      "phase": "late",
+      "signed": true,
+      "id": "r0075"
+    },
+    {
+      "buyer": "b19",
+      "visit": "v19",
+      "tick": 0,
+      "zone": "entrance",
+      "phase": "late",
+      "signed": false,
+      "id": "r0076"
+    },
+    {
+      "buyer": "b19",
+      "visit": "v19",
+      "tick": 10,
+      "zone": "demo",
+      "phase": "late",
+      "signed": false,
+      "id": "r0077"
+    },
+    {
+      "buyer": "b19",
+      "visit": "v19",
+      "tick": 10,
+      "zone": "meeting",
+      "phase": "late",
+      "signed": false,
+      "id": "r0078"
+    },
+    {
+      "buyer": "b19",
+      "visit": "v19",
+      "tick": 25,
+      "zone": "sample",
+      "phase": "late",
+      "signed": false,
+      "id": "r0079"
+    },
+    {
+      "buyer": "b20",
+      "visit": "v20",
+      "tick": 0,
+      "zone": "entrance",
+      "phase": "late",
+      "signed": false,
+      "id": "r0080"
+    },
+    {
+      "buyer": "b20",
+      "visit": "v20",
+      "tick": 10,
+      "zone": "demo",
+      "phase": "late",
+      "signed": false,
+      "id": "r0081"
+    },
+    {
+      "buyer": "b20",
+      "visit": "v20",
+      "tick": 10,
+      "zone": "meeting",
+      "phase": "late",
+      "signed": false,
+      "id": "r0082"
+    },
+    {
+      "buyer": "b20",
+      "visit": "v20",
+      "tick": 25,
+      "zone": "sample",
+      "phase": "late",
+      "signed": false,
+      "id": "r0083"
+    },
+    {
+      "buyer": "b21",
+      "visit": "v21",
+      "tick": 0,
+      "zone": "entrance",
+      "phase": "late",
+      "signed": true,
+      "id": "r0084"
+    },
+    {
+      "buyer": "b21",
+      "visit": "v21",
+      "tick": 10,
+      "zone": "demo",
+      "phase": "late",
+      "signed": true,
+      "id": "r0085"
+    },
+    {
+      "buyer": "b21",
+      "visit": "v21",
+      "tick": 10,
+      "zone": "meeting",
+      "phase": "late",
+      "signed": true,
+      "id": "r0086"
+    },
+    {
+      "buyer": "b21",
+      "visit": "v21",
+      "tick": 25,
+      "zone": "sample",
+      "phase": "late",
+      "signed": true,
+      "id": "r0087"
+    },
+    {
+      "buyer": "b22",
+      "visit": "v22",
+      "tick": 0,
+      "zone": "entrance",
+      "phase": "late",
+      "signed": false,
+      "id": "r0088"
+    },
+    {
+      "buyer": "b22",
+      "visit": "v22",
+      "tick": 10,
+      "zone": "demo",
+      "phase": "late",
+      "signed": false,
+      "id": "r0089"
+    },
+    {
+      "buyer": "b22",
+      "visit": "v22",
+      "tick": 10,
+      "zone": "meeting",
+      "phase": "late",
+      "signed": false,
+      "id": "r0090"
+    },
+    {
+      "buyer": "b22",
+      "visit": "v22",
+      "tick": 25,
+      "zone": "sample",
+      "phase": "late",
+      "signed": false,
+      "id": "r0091"
+    },
+    {
+      "buyer": "b23",
+      "visit": "v23",
+      "tick": 0,
+      "zone": "entrance",
+      "phase": "late",
+      "signed": false,
+      "id": "r0092"
+    },
+    {
+      "buyer": "b23",
+      "visit": "v23",
+      "tick": 10,
+      "zone": "demo",
+      "phase": "late",
+      "signed": false,
+      "id": "r0093"
+    },
+    {
+      "buyer": "b23",
+      "visit": "v23",
+      "tick": 10,
+      "zone": "meeting",
+      "phase": "late",
+      "signed": false,
+      "id": "r0094"
+    },
+    {
+      "buyer": "b23",
+      "visit": "v23",
+      "tick": 25,
+      "zone": "sample",
+      "phase": "late",
+      "signed": false,
+      "id": "r0095"
+    }
+  ]
+}
