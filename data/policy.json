@@ -4,5 +4,9 @@
   "minGap": 0,
   "maxGap": 60,
   "maxSpan": 180,
-  "candidateLimit": 500
+  "candidateLimit": 500,
+  "discoverPhase": "early",
+  "replayPhase": "late",
+  "permutationTrials": 200,
+  "rngSeed": 3345018881
 }

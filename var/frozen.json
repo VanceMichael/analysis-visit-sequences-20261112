@@ -1,0 +1,3087 @@
+{
+  "command": "discover",
+  "generatedAt": "2026-11-13T12:20:03.715Z",
+  "input": "/workspace/data/records.json",
+  "inputFingerprint": "32f2ba54fbc2f38c545b0f8c348a3253bd196975f7f113bfab56f55b50accbf2",
+  "interpretation": {
+    "caution": "路径来自历史访问数据，不承诺因果提升；需经 replay 在独立场次复验后再考虑试行",
+    "scope": "冻结候选仅描述发现场次上的访问路径与支持 visit 范围，signed 分组为事后描述"
+  },
+  "policy": {
+    "candidateLimit": 500,
+    "discoverPhase": "early",
+    "maxGap": 60,
+    "maxLength": 4,
+    "maxSpan": 180,
+    "minGap": 0,
+    "minSupport": 2,
+    "permutationTrials": 200,
+    "replayPhase": "late",
+    "rngSeed": 3345018881
+  },
+  "policyPath": "/workspace/data/policy.json",
+  "result": {
+    "accounting": {
+      "candidateLimit": 500,
+      "closedOutputs": 1,
+      "closureScope": "覆盖全部可行候选",
+      "enqueuedCandidates": 15,
+      "exploredCandidates": 15,
+      "frequentCandidates": 15,
+      "levels": [
+        {
+          "evaluated": 4,
+          "feasible": 4,
+          "frequent": 4,
+          "level": 1
+        },
+        {
+          "evaluated": 6,
+          "feasible": 6,
+          "frequent": 6,
+          "level": 2
+        },
+        {
+          "evaluated": 4,
+          "feasible": 4,
+          "frequent": 4,
+          "level": 3
+        },
+        {
+          "evaluated": 1,
+          "feasible": 1,
+          "frequent": 1,
+          "level": 4
+        }
+      ],
+      "screening": [
+        {
+          "evaluated": 15,
+          "rule": "从 distinct zone 起步，按序列扩展与同刻项集扩展逐层生成，跨 visit 去重",
+          "stage": "枚举"
+        },
+        {
+          "dropped": 0,
+          "rule": "仅剪枝在任何 visit 都无匹配的候选；间隔约束下不按支持度剪枝，避免漏掉合法超模式",
+          "stage": "零嵌入剪枝"
+        },
+        {
+          "kept": 15,
+          "rule": "独立 visit 支持数 >= minSupport(2)，同一 visit 多次匹配只计一次",
+          "stage": "支持度筛选"
+        },
+        {
+          "dropped": 14,
+          "kept": 1,
+          "rule": "剔除存在包含它的超模式、且该超模式支持 visit 集合包含本模式支持集（含相等）的候选",
+          "stage": "闭合筛选"
+        }
+      ],
+      "truncated": false,
+      "truncationPoint": null,
+      "truncationReason": null,
+      "zeroEmbeddingPruned": 0
+    },
+    "frozenPatterns": [
+      {
+        "closed": true,
+        "evidence": [
+          {
+            "buyer": "b0",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0,
+                10,
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": true,
+            "visit": "v0"
+          },
+          {
+            "buyer": "b1",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0,
+                10,
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v1"
+          },
+          {
+            "buyer": "b2",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0,
+                10,
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v2"
+          },
+          {
+            "buyer": "b3",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0,
+                10,
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": true,
+            "visit": "v3"
+          },
+          {
+            "buyer": "b4",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0,
+                10,
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v4"
+          },
+          {
+            "buyer": "b5",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0,
+                10,
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v5"
+          },
+          {
+            "buyer": "b6",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0,
+                10,
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": true,
+            "visit": "v6"
+          },
+          {
+            "buyer": "b7",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0,
+                10,
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v7"
+          },
+          {
+            "buyer": "b8",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0,
+                10,
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v8"
+          },
+          {
+            "buyer": "b9",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0,
+                10,
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": true,
+            "visit": "v9"
+          },
+          {
+            "buyer": "b10",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0,
+                10,
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v10"
+          },
+          {
+            "buyer": "b11",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0,
+                10,
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v11"
+          }
+        ],
+        "groups": {
+          "note": "signed 只作事后描述分组，不进入访问项与支持度",
+          "signedVisits": 4,
+          "unsignedVisits": 8
+        },
+        "key": "entrance>demo&meeting>sample",
+        "length": 4,
+        "pattern": [
+          [
+            "entrance"
+          ],
+          [
+            "demo",
+            "meeting"
+          ],
+          [
+            "sample"
+          ]
+        ],
+        "supportVisits": 12
+      },
+      {
+        "closed": false,
+        "evidence": [
+          {
+            "buyer": "b0",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                10,
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": true,
+            "visit": "v0"
+          },
+          {
+            "buyer": "b1",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                10,
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v1"
+          },
+          {
+            "buyer": "b2",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                10,
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v2"
+          },
+          {
+            "buyer": "b3",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                10,
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": true,
+            "visit": "v3"
+          },
+          {
+            "buyer": "b4",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                10,
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v4"
+          },
+          {
+            "buyer": "b5",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                10,
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v5"
+          },
+          {
+            "buyer": "b6",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                10,
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": true,
+            "visit": "v6"
+          },
+          {
+            "buyer": "b7",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                10,
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v7"
+          },
+          {
+            "buyer": "b8",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                10,
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v8"
+          },
+          {
+            "buyer": "b9",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                10,
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": true,
+            "visit": "v9"
+          },
+          {
+            "buyer": "b10",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                10,
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v10"
+          },
+          {
+            "buyer": "b11",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                10,
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v11"
+          }
+        ],
+        "groups": {
+          "note": "signed 只作事后描述分组，不进入访问项与支持度",
+          "signedVisits": 4,
+          "unsignedVisits": 8
+        },
+        "key": "demo&meeting>sample",
+        "length": 3,
+        "pattern": [
+          [
+            "demo",
+            "meeting"
+          ],
+          [
+            "sample"
+          ]
+        ],
+        "supportVisits": 12
+      },
+      {
+        "closed": false,
+        "evidence": [
+          {
+            "buyer": "b0",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0,
+                10
+              ]
+            ],
+            "phase": "early",
+            "signed": true,
+            "visit": "v0"
+          },
+          {
+            "buyer": "b1",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0,
+                10
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v1"
+          },
+          {
+            "buyer": "b2",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0,
+                10
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v2"
+          },
+          {
+            "buyer": "b3",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0,
+                10
+              ]
+            ],
+            "phase": "early",
+            "signed": true,
+            "visit": "v3"
+          },
+          {
+            "buyer": "b4",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0,
+                10
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v4"
+          },
+          {
+            "buyer": "b5",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0,
+                10
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v5"
+          },
+          {
+            "buyer": "b6",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0,
+                10
+              ]
+            ],
+            "phase": "early",
+            "signed": true,
+            "visit": "v6"
+          },
+          {
+            "buyer": "b7",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0,
+                10
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v7"
+          },
+          {
+            "buyer": "b8",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0,
+                10
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v8"
+          },
+          {
+            "buyer": "b9",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0,
+                10
+              ]
+            ],
+            "phase": "early",
+            "signed": true,
+            "visit": "v9"
+          },
+          {
+            "buyer": "b10",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0,
+                10
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v10"
+          },
+          {
+            "buyer": "b11",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0,
+                10
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v11"
+          }
+        ],
+        "groups": {
+          "note": "signed 只作事后描述分组，不进入访问项与支持度",
+          "signedVisits": 4,
+          "unsignedVisits": 8
+        },
+        "key": "entrance>demo&meeting",
+        "length": 3,
+        "pattern": [
+          [
+            "entrance"
+          ],
+          [
+            "demo",
+            "meeting"
+          ]
+        ],
+        "supportVisits": 12
+      },
+      {
+        "closed": false,
+        "evidence": [
+          {
+            "buyer": "b0",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0,
+                10,
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": true,
+            "visit": "v0"
+          },
+          {
+            "buyer": "b1",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0,
+                10,
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v1"
+          },
+          {
+            "buyer": "b2",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0,
+                10,
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v2"
+          },
+          {
+            "buyer": "b3",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0,
+                10,
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": true,
+            "visit": "v3"
+          },
+          {
+            "buyer": "b4",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0,
+                10,
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v4"
+          },
+          {
+            "buyer": "b5",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0,
+                10,
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v5"
+          },
+          {
+            "buyer": "b6",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0,
+                10,
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": true,
+            "visit": "v6"
+          },
+          {
+            "buyer": "b7",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0,
+                10,
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v7"
+          },
+          {
+            "buyer": "b8",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0,
+                10,
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v8"
+          },
+          {
+            "buyer": "b9",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0,
+                10,
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": true,
+            "visit": "v9"
+          },
+          {
+            "buyer": "b10",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0,
+                10,
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v10"
+          },
+          {
+            "buyer": "b11",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0,
+                10,
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v11"
+          }
+        ],
+        "groups": {
+          "note": "signed 只作事后描述分组，不进入访问项与支持度",
+          "signedVisits": 4,
+          "unsignedVisits": 8
+        },
+        "key": "entrance>demo>sample",
+        "length": 3,
+        "pattern": [
+          [
+            "entrance"
+          ],
+          [
+            "demo"
+          ],
+          [
+            "sample"
+          ]
+        ],
+        "supportVisits": 12
+      },
+      {
+        "closed": false,
+        "evidence": [
+          {
+            "buyer": "b0",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0,
+                10,
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": true,
+            "visit": "v0"
+          },
+          {
+            "buyer": "b1",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0,
+                10,
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v1"
+          },
+          {
+            "buyer": "b2",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0,
+                10,
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v2"
+          },
+          {
+            "buyer": "b3",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0,
+                10,
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": true,
+            "visit": "v3"
+          },
+          {
+            "buyer": "b4",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0,
+                10,
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v4"
+          },
+          {
+            "buyer": "b5",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0,
+                10,
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v5"
+          },
+          {
+            "buyer": "b6",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0,
+                10,
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": true,
+            "visit": "v6"
+          },
+          {
+            "buyer": "b7",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0,
+                10,
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v7"
+          },
+          {
+            "buyer": "b8",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0,
+                10,
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v8"
+          },
+          {
+            "buyer": "b9",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0,
+                10,
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": true,
+            "visit": "v9"
+          },
+          {
+            "buyer": "b10",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0,
+                10,
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v10"
+          },
+          {
+            "buyer": "b11",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0,
+                10,
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v11"
+          }
+        ],
+        "groups": {
+          "note": "signed 只作事后描述分组，不进入访问项与支持度",
+          "signedVisits": 4,
+          "unsignedVisits": 8
+        },
+        "key": "entrance>meeting>sample",
+        "length": 3,
+        "pattern": [
+          [
+            "entrance"
+          ],
+          [
+            "meeting"
+          ],
+          [
+            "sample"
+          ]
+        ],
+        "supportVisits": 12
+      },
+      {
+        "closed": false,
+        "evidence": [
+          {
+            "buyer": "b0",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                10
+              ]
+            ],
+            "phase": "early",
+            "signed": true,
+            "visit": "v0"
+          },
+          {
+            "buyer": "b1",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                10
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v1"
+          },
+          {
+            "buyer": "b2",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                10
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v2"
+          },
+          {
+            "buyer": "b3",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                10
+              ]
+            ],
+            "phase": "early",
+            "signed": true,
+            "visit": "v3"
+          },
+          {
+            "buyer": "b4",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                10
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v4"
+          },
+          {
+            "buyer": "b5",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                10
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v5"
+          },
+          {
+            "buyer": "b6",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                10
+              ]
+            ],
+            "phase": "early",
+            "signed": true,
+            "visit": "v6"
+          },
+          {
+            "buyer": "b7",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                10
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v7"
+          },
+          {
+            "buyer": "b8",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                10
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v8"
+          },
+          {
+            "buyer": "b9",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                10
+              ]
+            ],
+            "phase": "early",
+            "signed": true,
+            "visit": "v9"
+          },
+          {
+            "buyer": "b10",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                10
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v10"
+          },
+          {
+            "buyer": "b11",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                10
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v11"
+          }
+        ],
+        "groups": {
+          "note": "signed 只作事后描述分组，不进入访问项与支持度",
+          "signedVisits": 4,
+          "unsignedVisits": 8
+        },
+        "key": "demo&meeting",
+        "length": 2,
+        "pattern": [
+          [
+            "demo",
+            "meeting"
+          ]
+        ],
+        "supportVisits": 12
+      },
+      {
+        "closed": false,
+        "evidence": [
+          {
+            "buyer": "b0",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                10,
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": true,
+            "visit": "v0"
+          },
+          {
+            "buyer": "b1",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                10,
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v1"
+          },
+          {
+            "buyer": "b2",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                10,
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v2"
+          },
+          {
+            "buyer": "b3",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                10,
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": true,
+            "visit": "v3"
+          },
+          {
+            "buyer": "b4",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                10,
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v4"
+          },
+          {
+            "buyer": "b5",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                10,
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v5"
+          },
+          {
+            "buyer": "b6",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                10,
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": true,
+            "visit": "v6"
+          },
+          {
+            "buyer": "b7",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                10,
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v7"
+          },
+          {
+            "buyer": "b8",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                10,
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v8"
+          },
+          {
+            "buyer": "b9",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                10,
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": true,
+            "visit": "v9"
+          },
+          {
+            "buyer": "b10",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                10,
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v10"
+          },
+          {
+            "buyer": "b11",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                10,
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v11"
+          }
+        ],
+        "groups": {
+          "note": "signed 只作事后描述分组，不进入访问项与支持度",
+          "signedVisits": 4,
+          "unsignedVisits": 8
+        },
+        "key": "demo>sample",
+        "length": 2,
+        "pattern": [
+          [
+            "demo"
+          ],
+          [
+            "sample"
+          ]
+        ],
+        "supportVisits": 12
+      },
+      {
+        "closed": false,
+        "evidence": [
+          {
+            "buyer": "b0",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0,
+                10
+              ]
+            ],
+            "phase": "early",
+            "signed": true,
+            "visit": "v0"
+          },
+          {
+            "buyer": "b1",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0,
+                10
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v1"
+          },
+          {
+            "buyer": "b2",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0,
+                10
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v2"
+          },
+          {
+            "buyer": "b3",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0,
+                10
+              ]
+            ],
+            "phase": "early",
+            "signed": true,
+            "visit": "v3"
+          },
+          {
+            "buyer": "b4",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0,
+                10
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v4"
+          },
+          {
+            "buyer": "b5",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0,
+                10
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v5"
+          },
+          {
+            "buyer": "b6",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0,
+                10
+              ]
+            ],
+            "phase": "early",
+            "signed": true,
+            "visit": "v6"
+          },
+          {
+            "buyer": "b7",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0,
+                10
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v7"
+          },
+          {
+            "buyer": "b8",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0,
+                10
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v8"
+          },
+          {
+            "buyer": "b9",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0,
+                10
+              ]
+            ],
+            "phase": "early",
+            "signed": true,
+            "visit": "v9"
+          },
+          {
+            "buyer": "b10",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0,
+                10
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v10"
+          },
+          {
+            "buyer": "b11",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0,
+                10
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v11"
+          }
+        ],
+        "groups": {
+          "note": "signed 只作事后描述分组，不进入访问项与支持度",
+          "signedVisits": 4,
+          "unsignedVisits": 8
+        },
+        "key": "entrance>demo",
+        "length": 2,
+        "pattern": [
+          [
+            "entrance"
+          ],
+          [
+            "demo"
+          ]
+        ],
+        "supportVisits": 12
+      },
+      {
+        "closed": false,
+        "evidence": [
+          {
+            "buyer": "b0",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0,
+                10
+              ]
+            ],
+            "phase": "early",
+            "signed": true,
+            "visit": "v0"
+          },
+          {
+            "buyer": "b1",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0,
+                10
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v1"
+          },
+          {
+            "buyer": "b2",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0,
+                10
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v2"
+          },
+          {
+            "buyer": "b3",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0,
+                10
+              ]
+            ],
+            "phase": "early",
+            "signed": true,
+            "visit": "v3"
+          },
+          {
+            "buyer": "b4",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0,
+                10
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v4"
+          },
+          {
+            "buyer": "b5",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0,
+                10
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v5"
+          },
+          {
+            "buyer": "b6",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0,
+                10
+              ]
+            ],
+            "phase": "early",
+            "signed": true,
+            "visit": "v6"
+          },
+          {
+            "buyer": "b7",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0,
+                10
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v7"
+          },
+          {
+            "buyer": "b8",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0,
+                10
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v8"
+          },
+          {
+            "buyer": "b9",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0,
+                10
+              ]
+            ],
+            "phase": "early",
+            "signed": true,
+            "visit": "v9"
+          },
+          {
+            "buyer": "b10",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0,
+                10
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v10"
+          },
+          {
+            "buyer": "b11",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0,
+                10
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v11"
+          }
+        ],
+        "groups": {
+          "note": "signed 只作事后描述分组，不进入访问项与支持度",
+          "signedVisits": 4,
+          "unsignedVisits": 8
+        },
+        "key": "entrance>meeting",
+        "length": 2,
+        "pattern": [
+          [
+            "entrance"
+          ],
+          [
+            "meeting"
+          ]
+        ],
+        "supportVisits": 12
+      },
+      {
+        "closed": false,
+        "evidence": [
+          {
+            "buyer": "b0",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0,
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": true,
+            "visit": "v0"
+          },
+          {
+            "buyer": "b1",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0,
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v1"
+          },
+          {
+            "buyer": "b2",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0,
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v2"
+          },
+          {
+            "buyer": "b3",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0,
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": true,
+            "visit": "v3"
+          },
+          {
+            "buyer": "b4",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0,
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v4"
+          },
+          {
+            "buyer": "b5",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0,
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v5"
+          },
+          {
+            "buyer": "b6",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0,
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": true,
+            "visit": "v6"
+          },
+          {
+            "buyer": "b7",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0,
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v7"
+          },
+          {
+            "buyer": "b8",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0,
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v8"
+          },
+          {
+            "buyer": "b9",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0,
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": true,
+            "visit": "v9"
+          },
+          {
+            "buyer": "b10",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0,
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v10"
+          },
+          {
+            "buyer": "b11",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0,
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v11"
+          }
+        ],
+        "groups": {
+          "note": "signed 只作事后描述分组，不进入访问项与支持度",
+          "signedVisits": 4,
+          "unsignedVisits": 8
+        },
+        "key": "entrance>sample",
+        "length": 2,
+        "pattern": [
+          [
+            "entrance"
+          ],
+          [
+            "sample"
+          ]
+        ],
+        "supportVisits": 12
+      },
+      {
+        "closed": false,
+        "evidence": [
+          {
+            "buyer": "b0",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                10,
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": true,
+            "visit": "v0"
+          },
+          {
+            "buyer": "b1",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                10,
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v1"
+          },
+          {
+            "buyer": "b2",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                10,
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v2"
+          },
+          {
+            "buyer": "b3",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                10,
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": true,
+            "visit": "v3"
+          },
+          {
+            "buyer": "b4",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                10,
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v4"
+          },
+          {
+            "buyer": "b5",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                10,
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v5"
+          },
+          {
+            "buyer": "b6",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                10,
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": true,
+            "visit": "v6"
+          },
+          {
+            "buyer": "b7",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                10,
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v7"
+          },
+          {
+            "buyer": "b8",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                10,
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v8"
+          },
+          {
+            "buyer": "b9",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                10,
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": true,
+            "visit": "v9"
+          },
+          {
+            "buyer": "b10",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                10,
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v10"
+          },
+          {
+            "buyer": "b11",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                10,
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v11"
+          }
+        ],
+        "groups": {
+          "note": "signed 只作事后描述分组，不进入访问项与支持度",
+          "signedVisits": 4,
+          "unsignedVisits": 8
+        },
+        "key": "meeting>sample",
+        "length": 2,
+        "pattern": [
+          [
+            "meeting"
+          ],
+          [
+            "sample"
+          ]
+        ],
+        "supportVisits": 12
+      },
+      {
+        "closed": false,
+        "evidence": [
+          {
+            "buyer": "b0",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                10
+              ]
+            ],
+            "phase": "early",
+            "signed": true,
+            "visit": "v0"
+          },
+          {
+            "buyer": "b1",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                10
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v1"
+          },
+          {
+            "buyer": "b2",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                10
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v2"
+          },
+          {
+            "buyer": "b3",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                10
+              ]
+            ],
+            "phase": "early",
+            "signed": true,
+            "visit": "v3"
+          },
+          {
+            "buyer": "b4",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                10
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v4"
+          },
+          {
+            "buyer": "b5",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                10
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v5"
+          },
+          {
+            "buyer": "b6",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                10
+              ]
+            ],
+            "phase": "early",
+            "signed": true,
+            "visit": "v6"
+          },
+          {
+            "buyer": "b7",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                10
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v7"
+          },
+          {
+            "buyer": "b8",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                10
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v8"
+          },
+          {
+            "buyer": "b9",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                10
+              ]
+            ],
+            "phase": "early",
+            "signed": true,
+            "visit": "v9"
+          },
+          {
+            "buyer": "b10",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                10
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v10"
+          },
+          {
+            "buyer": "b11",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                10
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v11"
+          }
+        ],
+        "groups": {
+          "note": "signed 只作事后描述分组，不进入访问项与支持度",
+          "signedVisits": 4,
+          "unsignedVisits": 8
+        },
+        "key": "demo",
+        "length": 1,
+        "pattern": [
+          [
+            "demo"
+          ]
+        ],
+        "supportVisits": 12
+      },
+      {
+        "closed": false,
+        "evidence": [
+          {
+            "buyer": "b0",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0
+              ]
+            ],
+            "phase": "early",
+            "signed": true,
+            "visit": "v0"
+          },
+          {
+            "buyer": "b1",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v1"
+          },
+          {
+            "buyer": "b2",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v2"
+          },
+          {
+            "buyer": "b3",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0
+              ]
+            ],
+            "phase": "early",
+            "signed": true,
+            "visit": "v3"
+          },
+          {
+            "buyer": "b4",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v4"
+          },
+          {
+            "buyer": "b5",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v5"
+          },
+          {
+            "buyer": "b6",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0
+              ]
+            ],
+            "phase": "early",
+            "signed": true,
+            "visit": "v6"
+          },
+          {
+            "buyer": "b7",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v7"
+          },
+          {
+            "buyer": "b8",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v8"
+          },
+          {
+            "buyer": "b9",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0
+              ]
+            ],
+            "phase": "early",
+            "signed": true,
+            "visit": "v9"
+          },
+          {
+            "buyer": "b10",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v10"
+          },
+          {
+            "buyer": "b11",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                0
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v11"
+          }
+        ],
+        "groups": {
+          "note": "signed 只作事后描述分组，不进入访问项与支持度",
+          "signedVisits": 4,
+          "unsignedVisits": 8
+        },
+        "key": "entrance",
+        "length": 1,
+        "pattern": [
+          [
+            "entrance"
+          ]
+        ],
+        "supportVisits": 12
+      },
+      {
+        "closed": false,
+        "evidence": [
+          {
+            "buyer": "b0",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                10
+              ]
+            ],
+            "phase": "early",
+            "signed": true,
+            "visit": "v0"
+          },
+          {
+            "buyer": "b1",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                10
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v1"
+          },
+          {
+            "buyer": "b2",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                10
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v2"
+          },
+          {
+            "buyer": "b3",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                10
+              ]
+            ],
+            "phase": "early",
+            "signed": true,
+            "visit": "v3"
+          },
+          {
+            "buyer": "b4",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                10
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v4"
+          },
+          {
+            "buyer": "b5",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                10
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v5"
+          },
+          {
+            "buyer": "b6",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                10
+              ]
+            ],
+            "phase": "early",
+            "signed": true,
+            "visit": "v6"
+          },
+          {
+            "buyer": "b7",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                10
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v7"
+          },
+          {
+            "buyer": "b8",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                10
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v8"
+          },
+          {
+            "buyer": "b9",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                10
+              ]
+            ],
+            "phase": "early",
+            "signed": true,
+            "visit": "v9"
+          },
+          {
+            "buyer": "b10",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                10
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v10"
+          },
+          {
+            "buyer": "b11",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                10
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v11"
+          }
+        ],
+        "groups": {
+          "note": "signed 只作事后描述分组，不进入访问项与支持度",
+          "signedVisits": 4,
+          "unsignedVisits": 8
+        },
+        "key": "meeting",
+        "length": 1,
+        "pattern": [
+          [
+            "meeting"
+          ]
+        ],
+        "supportVisits": 12
+      },
+      {
+        "closed": false,
+        "evidence": [
+          {
+            "buyer": "b0",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": true,
+            "visit": "v0"
+          },
+          {
+            "buyer": "b1",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v1"
+          },
+          {
+            "buyer": "b2",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v2"
+          },
+          {
+            "buyer": "b3",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": true,
+            "visit": "v3"
+          },
+          {
+            "buyer": "b4",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v4"
+          },
+          {
+            "buyer": "b5",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v5"
+          },
+          {
+            "buyer": "b6",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": true,
+            "visit": "v6"
+          },
+          {
+            "buyer": "b7",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v7"
+          },
+          {
+            "buyer": "b8",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v8"
+          },
+          {
+            "buyer": "b9",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": true,
+            "visit": "v9"
+          },
+          {
+            "buyer": "b10",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v10"
+          },
+          {
+            "buyer": "b11",
+            "embeddingCount": 1,
+            "embeddingLimit": 100,
+            "embeddingsTruncated": false,
+            "matchTicks": [
+              [
+                25
+              ]
+            ],
+            "phase": "early",
+            "signed": false,
+            "visit": "v11"
+          }
+        ],
+        "groups": {
+          "note": "signed 只作事后描述分组，不进入访问项与支持度",
+          "signedVisits": 4,
+          "unsignedVisits": 8
+        },
+        "key": "sample",
+        "length": 1,
+        "pattern": [
+          [
+            "sample"
+          ]
+        ],
+        "supportVisits": 12
+      }
+    ],
+    "params": {
+      "candidateLimit": 500,
+      "maxGap": 60,
+      "maxLength": 4,
+      "maxSpan": 180,
+      "minGap": 0,
+      "minSupport": 2
+    },
+    "phase": "early",
+    "visitCount": 12
+  }
+}

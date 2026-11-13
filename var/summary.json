@@ -1,0 +1,32 @@
+{
+  "count": 96,
+  "groupBy": "zone",
+  "groups": [
+    {
+      "count": 24,
+      "key": "demo",
+      "sum": 240,
+      "visits": 24
+    },
+    {
+      "count": 24,
+      "key": "entrance",
+      "sum": 0,
+      "visits": 24
+    },
+    {
+      "count": 24,
+      "key": "meeting",
+      "sum": 240,
+      "visits": 24
+    },
+    {
+      "count": 24,
+      "key": "sample",
+      "sum": 600,
+      "visits": 24
+    }
+  ],
+  "inputFingerprint": "32f2ba54fbc2f38c545b0f8c348a3253bd196975f7f113bfab56f55b50accbf2",
+  "valueField": "tick"
+}

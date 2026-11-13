@@ -14,6 +14,12 @@ export function fingerprint(value) {
   return createHash('sha256').update(JSON.stringify(canonical(value))).digest('hex');
 }
 
+// 数据集指纹的唯一口径：按记录 id 稳定排序后规范化，保证与记录排列无关。
+// discover 冻结与 replay 复验都必须通过它核验输入一致性。
+export function recordsFingerprint(records) {
+  return fingerprint([...records].sort((left, right) => left.id.localeCompare(right.id, 'en')));
+}
+
 export function validateRecords(records) {
   if (!Array.isArray(records)) throw new Error('数据必须是记录数组');
   const ids = new Set();
@@ -38,7 +44,5 @@ export async function loadDataset(path) {
   const document = JSON.parse(await readFile(path, 'utf8'));
   if (document.version !== 1) throw new Error('不支持的数据文件版本');
   validateRecords(document.records);
-  return { version: 1, records: document.records, fingerprint: fingerprint(
-    [...document.records].sort((left, right) => left.id.localeCompare(right.id, 'en'))
-  ) };
+  return { version: 1, records: document.records, fingerprint: recordsFingerprint(document.records) };
 }
